@@ -4,11 +4,11 @@ import cv2
 import os
 from ultralytics import YOLO
 
-model_path = "model path"
+model_path = "model path" # change to your path
 model = YOLO(model_path)
-video_path = "video path"
+video_path = "video path" # change to your path
 
-output_dir = "outpyt dir"
+output_dir = "outpyt dir" # change to your path
 os.makedirs(output_dir, exist_ok=True)
 
 cap = cv2.VideoCapture(video_path)
